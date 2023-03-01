@@ -12,7 +12,7 @@ export const useLogin = () => {
     setError(null);
 
     const response = await fetch(
-      "https://expenses-tracker-api-60py.onrender.com//api/user/login",
+      "https://expenses-tracker-api-60py.onrender.com/api/user/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
