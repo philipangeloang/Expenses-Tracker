@@ -57,7 +57,7 @@ export default function TrackerForm(props) {
 
   return (
     <React.Fragment>
-      <div className="rounded-lg font-poppins p-1 bg-gray-800 text-white w-1/4 m-auto | lg:px-6 lg:py-6">
+      <div className="rounded-lg px-6 py-6 font-poppins bg-gray-800 text-white w-1/4 m-auto">
         <div className="flex flex-col">
           <div className="flex justify-between">
             <h2 className="text-base font-semibold">NEW ITEM</h2>
@@ -128,12 +128,7 @@ export default function TrackerForm(props) {
                   : "bg-gray-700 p-1 rounded-md"
               }
             />
-            <button
-              onClick={() => {
-                props.onPost(false);
-              }}
-              className="mt-7 bg-indigo-700 px-1 py-2 rounded-md"
-            >
+            <button className="mt-7 bg-indigo-700 px-1 py-2 rounded-md">
               POST
             </button>
             {error && (
