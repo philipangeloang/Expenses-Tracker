@@ -57,7 +57,7 @@ export default function TrackerForm(props) {
 
   return (
     <React.Fragment>
-      <div className="rounded-lg px-6 py-6 font-poppins bg-gray-800 text-white w-1/4 m-auto">
+      <div className="rounded-lg px-6 py-6 font-poppins bg-gray-800 text-white w-3/4 m-auto | md:w-2/4 | lg:w-1/4">
         <div className="flex flex-col">
           <div className="flex justify-between">
             <h2 className="text-base font-semibold">NEW ITEM</h2>
