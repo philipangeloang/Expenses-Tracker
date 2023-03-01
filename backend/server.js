@@ -10,11 +10,7 @@ const cors = require("cors");
 const app = express();
 
 // cors
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 
 // middleware
 app.use(express.json());
