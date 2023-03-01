@@ -24,14 +24,17 @@ export default function TrackerForm(props) {
 
     const track = { trackerType, source, amount, description };
 
-    const response = await fetch("/api/tracker", {
-      method: "POST",
-      body: JSON.stringify(track),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://expenses-tracker-api-60py.onrender.com/api/tracker",
+      {
+        method: "POST",
+        body: JSON.stringify(track),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
 
     const json = await response.json();
 

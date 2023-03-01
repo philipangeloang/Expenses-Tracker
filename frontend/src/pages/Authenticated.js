@@ -19,11 +19,14 @@ export default function Authenticated() {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const response = await fetch("/api/tracker", {
-        headers: {
-          Authorization: `Bearer ${user.token}`,
-        },
-      });
+      const response = await fetch(
+        "https://expenses-tracker-api-60py.onrender.com/api/tracker",
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
       const json = await response.json();
 
       if (response.ok) {

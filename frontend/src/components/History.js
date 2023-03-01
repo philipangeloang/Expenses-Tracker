@@ -23,12 +23,15 @@ export default function History({ item, onUpdate, onPost }) {
       return;
     }
 
-    const response = await fetch("/api/tracker/" + item._id, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://expenses-tracker-api-60py.onrender.com/api/tracker/" + item._id,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
 
     const json = await response.json();
 

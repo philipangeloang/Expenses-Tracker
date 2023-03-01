@@ -19,14 +19,17 @@ export default function UpdateForm({ patchID, onPost }) {
 
     const track = { trackerType, source, amount, description };
 
-    const response = await fetch("/api/tracker/" + patchID, {
-      method: "PATCH",
-      body: JSON.stringify(track),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://expenses-tracker-api-60py.onrender.com/api/tracker/" + patchID,
+      {
+        method: "PATCH",
+        body: JSON.stringify(track),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
 
     const json = await response.json();
 
