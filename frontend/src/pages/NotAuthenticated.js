@@ -87,7 +87,7 @@ export default function NotAuthenticated() {
               <img
                 className="h-10 mr-3 rounded-full"
                 alt="Benjamin Franklin"
-                src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU4MDk5NzU4ODk0ODE5MDk3/franklin.jpg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg/1200px-Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg"
               ></img>
             </div>
             <p className="text-white font-poppins font-semibold text-sm">
