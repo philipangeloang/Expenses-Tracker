@@ -87,7 +87,7 @@ export default function NotAuthenticated() {
               <img
                 className="h-10 mr-3 rounded-full"
                 alt="Benjamin Franklin"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg/1200px-Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg"
+                src="https://www.cydcor.com/wp-content/uploads/2018/04/Cydcor-Five-Lessons-From-Benjamin-Franklin.jpg"
               ></img>
             </div>
             <p className="text-white font-poppins font-semibold text-sm">
