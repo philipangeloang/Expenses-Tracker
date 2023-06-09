@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export const useLogin = () => {
   const [error, setError] = useState(null);
@@ -10,6 +11,13 @@ export const useLogin = () => {
   const login = async (email, password) => {
     setIsLoading(true);
     setError(null);
+
+    if (isLoading)
+      return (
+        <div className="absolute w-full h-full flex items-center justify-center">
+          <LoadingSpinner />
+        </div>
+      );
 
     const response = await fetch(
       "https://expenses-tracker-api-60py.onrender.com/api/user/login",
